@@ -70,7 +70,7 @@ exports.create = async(req, res) => {
 }
 
 exports.update = async(req, res) => {
-    const username = req.body.username;
+    const username = req.params.username;
     console.log("Update user with username", username)
 
     const updateUser = {
