@@ -12,8 +12,11 @@ const swaggerDoc = require('./swagger');
 const user = require('./routes/user.routes');
 const userProduct = require('./routes/user.products.routes');
 const auth = require('./routes/auth.routes')
+const product = require('./routes/product.routes')
 
 app.use('/api/users', user);
+
+app.use('/api/products', product);
 
 // app.use(cors({
 //     origin: ['http://localhost:3000']
